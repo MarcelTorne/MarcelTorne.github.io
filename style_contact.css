@@ -1,0 +1,28 @@
+body{
+    background-color: #e5e8eb;
+}
+
+.contact{
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100vw;
+  font-family: 'sourcecodefont', Helvetica, serif;
+}
+
+.br {
+    display: block;
+    margin-bottom: 1em;
+}
+
+
+@font-face {
+    font-family: 'sourcecodefont';
+    src: url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff2') format('woff2'),
+        url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

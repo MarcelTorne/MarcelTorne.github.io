@@ -1,0 +1,46 @@
+body{
+    background-color: #e5e8eb;
+}
+
+h1 {
+    color: #435d75;
+}
+.about-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.resume{
+    margin-top: 230px;
+}
+
+.resume li{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.uni-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.year{
+    float: right;
+}
+
+#harvard{
+    display:none;
+}
+
+#mit{
+    display:none;
+}
+
+#epfl-courses{
+    display:none;
+}
+
+.uni li{
+    display: grid;
+    grid-template-columns: 1fr;
+}

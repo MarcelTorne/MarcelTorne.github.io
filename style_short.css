@@ -1,0 +1,30 @@
+
+header-component{
+    margin-top: 0px;
+}
+
+body{
+    background-image: url('content/drawing_profile.png');
+    background-repeat: no-repeat;
+    background-color: #e5e8eb;
+    background-position: left 200px top -450px;
+    background-size: 1300px;
+}
+
+.my-history{
+    margin-top: 300px;
+    max-width: 700px;
+    list-style-type: none;
+}
+
+.my-history li{
+    margin: 10px;
+}
+
+@font-face {
+    font-family: 'sourcecodefont';
+    src: url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff2') format('woff2'),
+        url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
