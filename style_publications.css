@@ -11,15 +11,15 @@ body{
     background-color:   #e5e8eb;
 }
 .my-history{
-    margin-top: 300px;
-    max-width: 700px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    max-width: 100%;
     list-style-type: none;
     color: #28435c;
     font-family: 'quicksandlight', Helvetica, serif;
 }
 
 .my-history p{
-    margin: 5%;
     align:'justify';
 }
 .my-history p a{
@@ -36,14 +36,25 @@ body{
     background-color: #322f30;
 }
 
-.my-history li{
-    margin: 10px;
-}
+
 
 .bottom-bar{
     background-color: transparent !important;
 }
 
+.final-space{
+    height: 100px;
+}
+
+.project{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 200px auto;
+    margin-bottom: 40px;
+}
+video{
+    max-width: 100%;
+}
 @font-face {
     font-family: 'sourcecodefont';
     src: url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff2') format('woff2'),
