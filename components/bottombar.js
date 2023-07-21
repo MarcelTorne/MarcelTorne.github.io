@@ -62,6 +62,7 @@ class BottomBar extends HTMLElement {
             <ul class="social-icons">
                 <li><a href="https://www.linkedin.com/in/marceltorne/?locale=en_US" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/MarcelTorne" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                <li><a href="https://twitter.com/marceltornev" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
                 <li><a href="mailto:marcel_tornevillasevil@g.harvard.edu" class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
             </ul>
         </div>
