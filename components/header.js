@@ -65,7 +65,7 @@ class Header extends HTMLElement {
       </style>
       
       <div class="header">
-        <h1 class="my-name-title">Marcel Torn&#233; Villasevil</h1>
+        <h1 class="my-name-title">Marcel Torne Villasevil</h1>
 
         <ul class="nav-bar">
           <li><a href="short_website.html">About</a></li>
