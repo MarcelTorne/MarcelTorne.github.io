@@ -52,6 +52,10 @@ body{
     grid-template-columns: 200px auto;
     margin-bottom: 40px;
 }
+image{
+    width: 40px;
+
+}
 video{
     max-width: 100%;
 }
