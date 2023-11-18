@@ -13,6 +13,7 @@ body{
 .my-history{
     margin-top: 200px;
     margin-bottom: 100px;
+    margin-left: 10%;
     max-width: 100%;
     list-style-type: none;
     color: #28435c;
@@ -57,6 +58,9 @@ image{
 
 }
 video{
+    max-width: 100%;
+}
+img{
     max-width: 100%;
 }
 @font-face {
