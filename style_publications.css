@@ -1,0 +1,74 @@
+
+header-component{
+    margin-top: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color:   #e5e8eb;
+}
+.my-history{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 10%;
+    max-width: 100%;
+    list-style-type: none;
+    color: #28435c;
+    font-family: 'quicksandlight', Helvetica, serif;
+}
+
+.my-history p{
+    align:'justify';
+}
+.my-history p a{
+    color: #1387e6;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+
+
+.bottom-bar{
+    background-color: transparent !important;
+}
+
+.final-space{
+    height: 100px;
+}
+
+.project{
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: 200px auto;
+    margin-bottom: 40px;
+}
+image{
+    width: 40px;
+
+}
+video{
+    max-width: 100%;
+}
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'sourcecodefont';
+    src: url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff2') format('woff2'),
+        url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
