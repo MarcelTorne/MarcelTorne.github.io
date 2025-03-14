@@ -63,7 +63,7 @@ class BottomBar extends HTMLElement {
                 <li><a href="https://www.linkedin.com/in/marceltorne/?locale=en_US" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
                 <li><a href="https://github.com/MarcelTorne" class="social-icon"> <i class="fa fa-github"></i></a></li>
                 <li><a href="https://twitter.com/marceltornev" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                <li><a href="mailto:marcelto@mit.edu" class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="mailto:marcelto@stanford.edu" class="social-icon"> <i class="fa fa-envelope-o"></i></a></li>
                 <li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjI3qTz0sGBAxVJMlkFHcA5Bx0QFnoECBEQAQ&url=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fuser%3DITlelQ8AAAAJ%26hl%3Den&usg=AOvVaw1AF24oC_kxloqk3FobE7r_&opi=89978449" class="social-icon"> <i class="fa fa-book"></i></a></li>
             </ul>
         </div>
