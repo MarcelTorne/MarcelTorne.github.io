@@ -1,0 +1,61 @@
+
+header-component{
+    margin-top: 0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url('content/MarcelBackground.png');
+    background-repeat: no-repeat;
+    background-color: #e5e8eb;
+    background-position: left 650px top 140px;
+    background-size: 700px;
+    height: 100%;
+}
+
+.my-history{
+    margin-top: 200px;
+    max-width: 750px;
+    list-style-type: none;
+    color: #28435c;
+    font-family: 'quicksandlight', Helvetica, serif;
+}
+
+.my-history p{
+    margin: 5%;
+    align:'justify';
+}
+.my-history p a{
+    color: #1387e6;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+
+.my-history li{
+    margin: 10px;
+}
+
+.bottom-bar{
+    background-color: transparent !important;
+}
+
+@font-face {
+    font-family: 'sourcecodefont';
+    src: url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff2') format('woff2'),
+        url('sourcecode_type/sourcecodepro-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
