@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style_resume.css">
+    <link rel="stylesheet" href="style_header.css">
+    <script src="components/bottombar.js" type="text/javascript" defer></script>
+
+    <title>Resume - Marcel Torne Villasevil</title>
+    <script src="resume.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <div class="main">
+  
+        <div class="header">
+            <h1 class="my-name-title">Marcel Torn&#233; Villasevil</h1>
+    
+            <ul class="nav-bar">
+              <li><a href="index.html">About</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="https://start-project-moonshot.github.io/moonshot/">Project Moonshot</a></li>
+              <li><a id="active" href="resume.html">R&#233;sum&#233;</a></li>
+              <li><a href="human.html">Human</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="spacer">
+            &nbsp;
+        </div>
+    
+        <div class="resume">
+            <div class="studies">
+                <h1>Studies</h1>
+                <ul>
+                    <li>
+                        <img src="content/harvard-university-logo-png-transparent.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Harvard University</p>
+                                <p class="year">Sep 2021 - May 2023</p>
+                            </div>
+                            <p>Masters of Engineering in Computational Science and Engineering</p>
+                            <button class="coursework" onclick="displayMore('harvard')">Relevant Coursework</button>
+                            <span id="harvard">
+                                <ul>
+                                    <li>AM207 - Stochastic Methods for Data Analysis</li>
+                                    <li>AM205 - Numerical Methods</li>
+                                    <li>CS289 - Biologically-inspired Multi-agent Systems</li>
+                    
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="content/mit_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Massachusetts Institute of Technology</p>
+                                <p class="year">Sep 2021 - May 2023</p>
+                            </div>
+                            <p>Cross-registering student</p>
+                            <button class="coursework" onclick="displayMore('mit')">Relevant Coursework</button>
+                            <span id="mit">
+                                <ul>
+                                    <li>6.864 - Advanced Natural Language Processing</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="content/epfl_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Ecole Polytechnique Federale de Lausanne (EPFL)</p>
+                                <p class="year">Sep 2018 - July 2021</p>
+                            </div>
+                            <p>Bachelor of Science in Computer Science</p>
+                            <button class="coursework" onclick="displayMore('epfl-courses')">Relevant Coursework</button>
+                            <span id="epfl-courses">
+                                <ul>
+                                    <li>Introduction to Machine Learning</li>
+                                    <li>Artificial Intelligence</li>
+                                    <li>Computer Architecture I&II</li>
+                                    <li>Databases</li>
+                                    <li>Algorithms</li>
+                                    <li>Functional Programming</li>
+                                    <li>Parallelism and Concurrency</li>
+                                </ul>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="experience">
+                <h1>Work Experience</h1>
+                <ul>
+                    <li>
+                        <img src="content/amazon_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Amazon</p>
+                                <p class="year">May 2020 - Sep 2020</p>
+                            </div>
+                            <p>Software Development Engineering Intern</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="content/epfl_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Ecole Polytechnique Federale de Lausanne (EPFL)</p>
+                                <p class="year">Sep 2019 - Jan 2023</p>
+                            </div>
+                            <p>Teaching Assistant</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="leadership">
+                <h1>Leadership Experience</h1>
+                <ul>
+                    <li>
+                        <img src="content/quizfit.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Quiz.Fit</p>
+                                <p class="year">Jun 2019 - Jan 2021</p>
+                            </div>
+                            <p>Co-founder and Lead Software Developer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="projects">
+                <h1>Projects</h1>
+                <ul>
+                    <li>
+                        <img src="content/mlo_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Machine Learning and Optimization Lab (MLO) @EPFL</p>
+                                <p class="year">Jan 2021 - Jul 2021</p>
+                            </div>
+                            <p>Final Bachelor Project, supervised by Prof. Martin Jaggi</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="content/epfl_rt_logo.png" alt="harvard logo" width="40" >    
+                        <div class="uni">
+                            <div class="uni-in">
+                                <p>Formula Student Racing Team @EPFL</p>
+                                <p class="year">Jan 2021 - Jul 2021</p>
+                            </div>
+                            <p>Machine Learning Research Project</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="awards">
+                <h1>Competitions & Awards</h1>
+            </div>
+            <div class="languages">
+                <h1>Languages</h1>
+                <ul>
+                    <li>French</li>
+                    <li>Spanish</li>
+                    <li>Catalan</li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h1>Programming Skills</h1>
+                Python (numpy, pandas, pytorch, tensorflow), Scala, Spark, VHDL, MIPS assembly, Java, C/C++, SQL, JavaScript, HTML, CUDA
+            </div>
+        </div>
+        </div>
+        <bottom-bar-component></bottom-bar-component>
+  </body>
+</html>

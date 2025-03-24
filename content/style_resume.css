@@ -1,0 +1,55 @@
+body{
+    background-color: #e5e8eb;
+}
+
+h1 {
+    color: #435d75;
+}
+.about-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+.resume{
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+.resume li{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.uni-in{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 15%;
+}
+
+.year{
+    float: right;
+    text-align: right;
+}
+
+#harvard{
+    display:none;
+}
+
+#mit{
+    display:none;
+}
+
+#epfl-courses{
+    display:none;
+}
+
+.uni li{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+iframe{
+    display:block;
+}
