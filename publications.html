@@ -4,7 +4,55 @@
     <script src="components/bottombar.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="style_publications.css">
     <link rel="stylesheet" href="style_header.css">
-    <title>About - Marcel Torne Villasevil</title>    
+    <title>About - Marcel Torne Villasevil</title>
+    <style>
+      .pub-filter {
+        display: flex;
+        gap: 0;
+        margin-bottom: 28px;
+        border: 1px solid #8ca0ab;
+        border-radius: 6px;
+        width: fit-content;
+        overflow: hidden;
+      }
+      .pub-filter-btn {
+        background: none;
+        border: none;
+        color: #8ca0ab;
+        padding: 7px 18px;
+        cursor: pointer;
+        font-family: 'quicksandlight', Helvetica, serif;
+        font-size: 14px;
+        transition: background 0.15s, color 0.15s;
+      }
+      .pub-filter-btn:first-child {
+        border-right: 1px solid #8ca0ab;
+      }
+      .pub-filter-btn.active {
+        background: #435d75;
+        color: #fff;
+      }
+      .pub-filter-btn:hover:not(.active) {
+        background: #d8dfe4;
+        color: #435d75;
+      }
+      .pub-extra {
+        display: none;
+      }
+      .proj-thumb {
+        width: 200px;
+        min-height: 110px;
+        background: #d0d8df;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 11px;
+        color: #8ca0ab;
+        text-align: center;
+        padding: 8px;
+      }
+    </style>
   </head>
   <body>
 
@@ -59,7 +107,60 @@
         <h2>
           Publications
         </h2>
-        
+
+        <div class="pub-filter">
+          <button class="pub-filter-btn active" onclick="setPubFilter('selected', this)">Selected</button>
+          <button class="pub-filter-btn" onclick="setPubFilter('all', this)">All</button>
+        </div>
+
+        <div class="project">
+          <img src="content/mem_thumbnail.png" alt="MEM thumbnail">
+          <p>
+            <i>MEM: Multi-Scale Embodied Memory for Vision Language Action Models</i><br>
+            <strong>Marcel Torne</strong>*, Karl Pertsch*, Homer Walke, Kyle Vedder, Suraj Nair, Brian Ichter, Allen Ren, Haohuan Wang, Jiaming Tang, Kyle Stachowicz, Karan Dhabalia, Michael Equi, Quan Vuong, Jost Tobias Springenberg, Sergey Levine, Chelsea Finn, Danny Driess.
+            <br>
+            arXiv 2026
+            / <a href="https://physicalintelligence.company/research/memory" target="_blank">Website</a>
+            / <a href="https://arxiv.org/abs/2603.03596v1" target="_blank">Paper</a>
+          </p>
+        </div>
+
+        <div class="project">
+          <img src="content/polarisvid.mp4" alt="PolaRiS">
+          <p>
+            <i>PolaRiS: Scalable Real-to-Sim Evaluations for Generalist Robot Policies</i><br>
+            Arhan Jain, Mingtong Zhang, Kanav Arora, William Chen, <strong>Marcel Torne</strong>, Muhammad Zubair Irshad, Sergey Zakharov, Yue Wang, Sergey Levine, Chelsea Finn, Wei-Chiu Ma, Dhruv Shah, Abhishek Gupta, Karl Pertsch.
+            <br>
+            arXiv 2025
+            / <a href="https://polaris-evals.github.io" target="_blank">Website</a>
+            / <a href="https://arxiv.org/abs/2512.16881" target="_blank">Paper</a>
+          </p>
+        </div>
+
+        <div class="project pub-extra">
+          <img src="content/pi06_thumbnail.png" alt="Pi06 thumbnail">
+          <p>
+            <i>&#960;<sub>0.6</sub><sup>*</sup>: a VLA that Learns from Experience</i><br>
+            Ali Amin, Raichelle Aniceto, Ashwin Balakrishna, Kevin Black, ..., <strong>Marcel Torne</strong>, ..., et al.
+            <br>
+            arXiv 2025
+            / <a href="https://physicalintelligence.company/blog/pistar06" target="_blank">Blog</a>
+            / <a href="https://physicalintelligence.company/download/pistar06.pdf" target="_blank">Paper</a>
+          </p>
+        </div>
+
+        <div class="project pub-extra">
+          <img src="content/roboarena_thumbnail.mp4" alt="RoboArena">
+          <p>
+            <i>RoboArena: Distributed Real-World Evaluation of Generalist Robot Policies</i><br>
+            Pranav Atreya*, Karl Pertsch*, Tony Lee*, Moo Jin Kim, Arhan Jain, ..., <strong>Marcel Torne Villasevil</strong>, ..., Abhishek Gupta, Chelsea Finn, Sergey Levine, et al.
+            <br>
+            arXiv 2025
+            / <a href="https://robo-arena.github.io" target="_blank">Website</a>
+            / <a href="https://arxiv.org/abs/2506.18123" target="_blank">Paper</a>
+          </p>
+        </div>
+
         <div class="project">
           <img src="content/tweet1newaspect.mp4" alt="PTP GIF">
 
@@ -125,7 +226,7 @@
           </p>
         </div>
 
-        <div class="project">
+        <div class="project pub-extra">
           <img src="content/robotkid.png">
 
           <p>
@@ -205,6 +306,56 @@
     </div>
 
     <bottom-bar-component></bottom-bar-component>
+    <script>
+      function setPubFilter(filter, clickedBtn) {
+        document.querySelectorAll('.pub-filter-btn').forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        clickedBtn.classList.add('active');
+        document.querySelectorAll('.pub-extra').forEach(function(el) {
+          el.style.display = filter === 'all' ? 'grid' : 'none';
+        });
+      }
+    </script>
+  </body>
+  
+</html>ensorimotor_learning_VF.pdf" target="_blank">here</a>.
+            
+          </p>
+        </div>
+
+        <div class="project">
+          <video autoplay loop>
+            <source src="content/biorobot_proj.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+
+          <p>
+            <i>Multi-Agent Reinforcement Learning for Collective Transport</i> <br>
+            Project developed as part of the final project for the Biologically-inspired Multi-Agent Systems (CS289) class by Prof. Radhika Nagpal at Harvard University, Fall 2021.<br>
+            Project report available <a href="content/TORNE_cs289finalpaper.pdf" target="_blank">here</a>.
+            
+          </p>
+        </div>
+        
+
+        <div class="final-space"></div>
+
+      </div>
+    </div>
+
+    <bottom-bar-component></bottom-bar-component>
+    <script>
+      function setPubFilter(filter, clickedBtn) {
+        document.querySelectorAll('.pub-filter-btn').forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        clickedBtn.classList.add('active');
+        document.querySelectorAll('.pub-extra').forEach(function(el) {
+          el.style.display = filter === 'all' ? 'grid' : 'none';
+        });
+      }
+    </script>
   </body>
   
 </html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcel Torne — Human</title>
+  <link rel="stylesheet" href="style_proposal.css">
+  <style>
+    .human-main {
+      flex: 1;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+      width: 100%;
+    }
+    .page-hero { margin-bottom: 56px; }
+    .page-title {
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .page-subtitle { font-size: 15px; color: var(--text-secondary); }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+    }
+    .card { display: flex; flex-direction: column; }
+    .card-img, .card-video {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 10px;
+      display: block;
+      background: var(--surface);
+    }
+    .card-body { padding: 16px 0 8px; }
+    .card-year {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+    .card-text {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) { .gallery { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <span class="site-name">Marcel Torne</span>
+      <ul class="nav-links">
+        <li><a href="index_proposal.html">About</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="https://start-project-moonshot.github.io/moonshot/">Moonshot</a></li>
+        <li><a href="resume3.html">Résumé</a></li>
+        <li><a class="nav-active" href="human_v1.html">Human</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="human-main">
+
+    <div class="page-hero">
+      <h1 class="page-title">Human</h1>
+      <p class="page-subtitle">Life outside the lab — scroll down to go further back in time.</p>
+    </div>
+
+    <div class="gallery">
+
+      <div class="card">
+        <img class="card-img" src="content/capecodmarathono.png" alt="Cape Cod Marathon" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2023</span>
+          <h3 class="card-title">Cape Cod Marathon</h3>
+          <p class="card-text">First marathon — October 8th in Falmouth, Cape Cod, MA. An incredible venue for a milestone.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/ironman703.png" alt="Ironman 70.3 Nice" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2023</span>
+          <h3 class="card-title">Half Ironman 70.3 — Nice</h3>
+          <p class="card-text">Spontaneous idea, questionable wisdom — an unforgettable first triathlon in Nice, France.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/bostonhm.png" alt="Boston Half Marathon" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2022</span>
+          <h3 class="card-title">Boston Half Marathon</h3>
+          <p class="card-text">Running became my way to rest, reset, and come back to research energized. First Boston Half after starting my Masters at Harvard.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/switzerland.png" alt="Switzerland" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2018 – 2021</span>
+          <h3 class="card-title">EPFL — Lausanne</h3>
+          <p class="card-text">Traded competitive sailing for hiking and skiing in the Alps during breaks from studying Computer Science.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/olimpiades.jpg" alt="Physics Olympiad" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2018</span>
+          <h3 class="card-title">Spanish Physics Olympiad</h3>
+          <p class="card-text">Bronze medal in the national Physics Olympiad. My IB diploma year sparked a lifelong passion for learning.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/musica.png" alt="Baroque Guitar" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2008 – 2018</span>
+          <h3 class="card-title">Baroque Guitar & Lute</h3>
+          <p class="card-text">Ten years pursuing a Music Degree under Professor William Waters — chamber music, choir, and the beauty of baroque.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/windsurfingyears-04.png" alt="Windsurfing World Championship" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2017 – 2018</span>
+          <h3 class="card-title">Windsurfing World Championships</h3>
+          <p class="card-text">Two World Championships racing against Olympic athletes, fighting for position on the starting line.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/windsurfingyears1.png" alt="Raceboard Windsurfing" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2016 – 2018</span>
+          <h3 class="card-title">Raceboard Windsurfing</h3>
+          <p class="card-text">Big sails, long thin boards, and regional championship trophies in a demanding and technical discipline.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/windsurfingyears-03.png" alt="Foil Windsurfing" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">c. 2017</span>
+          <h3 class="card-title">Foil Windsurfing</h3>
+          <p class="card-text">Tried foiling — challenging and fun in equal measure. A humbling reminder that there's always more to learn.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <video class="card-video" autoplay muted loop playsinline>
+          <source src="content/sailing_garda.MP4" type="video/mp4">
+        </video>
+        <div class="card-body">
+          <span class="card-year">2015</span>
+          <h3 class="card-title">29er Eurocup — Riva del Garda</h3>
+          <p class="card-text">Nico and me practicing gibes before the race at this breathtaking venue on Lake Garda, Italy.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/29ersailiing.JPG" alt="29er Sailing" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2014 – 2016</span>
+          <h3 class="card-title">29er — Racing Across Europe</h3>
+          <p class="card-text">With Nico, sailing Spain and Europe in the fast and demanding 29er two-handed skiff.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img" src="content/optimist.png" alt="Optimist Sailing" loading="lazy">
+        <div class="card-body">
+          <span class="card-year">2008 – 2014</span>
+          <h3 class="card-title">Optimist — The Beginning</h3>
+          <p class="card-text">Grew up in Salou on the Mediterranean coast of Spain. Started sailing at age 8 in an Optimist — and never looked back.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/marceltorne/?locale=en_US" target="_blank">LinkedIn</a>
+      <a href="https://github.com/MarcelTorne" target="_blank">GitHub</a>
+      <a href="https://twitter.com/marceltornev" target="_blank">Twitter</a>
+      <a href="mailto:marcelto@stanford.edu">Email</a>
+      <a href="https://scholar.google.com/citations?user=ITlelQ8AAAAJ&hl=en" target="_blank">Scholar</a>
+    </div>
+  </footer>
+
+</body>
+</html>
