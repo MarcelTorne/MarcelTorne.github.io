@@ -55,35 +55,67 @@
         </div>
       -->
       <div class="my-history">
-        <p align='justify'>
-          <!--
-          I am a Master's student in Computational Science and Engineering at <a>Harvard University</a> doing my thesis in Reinforcement Learning and Robotics at <a>MIT</a> under the supervision of Professor <a href="https://people.eecs.berkeley.edu/~pulkitag/">Pulkit Agrawal</a> and Professor <a href="https://homes.cs.washington.edu/~abhgupta/">Abhishek Gupta</a>. My interest lies in building assistive robots to help the elderly in their daily life. To get there, we should advance the field in <a>generalizable and transferable robotic controllers</a> &mdash; one of my ideas is to bring <a>foundation models</a> from computer vision and natural language processing to robotics. 
-          -->
-          I am a PhD student at Stanford University.
-          My dream is to design the next generation of learning-based assistive robots. I plan to get there by studying methods for scalable data collection and rapid adaptation of policies to unseen scenarios while emphasizing human-centric approaches.
-          <br>
-        </p>
 
+        <div class="bio-filter">
+          <button class="bio-btn active" onclick="setBio('professional', this)">Professional Bio</button>
+          <button class="bio-btn" onclick="setBio('why', this)">Why do I do what I do?</button>
+        </div>
 
-        <p align='justify'>
-          Previously, I obtained my Master's degree at Harvard University supported by the <a href="https://rcc.harvard.edu" target="_blank">Real Colegio Complutense</a> scholarship. And I was part of the Improbable AI Lab at MIT CSAIL under the supervision of Professors <a href="https://people.eecs.berkeley.edu/~pulkitag/" target="_blank">Pulkit Agrawal</a> and <a href="https://homes.cs.washington.edu/~abhgupta/" target="_blank">Abhishek Gupta</a>. 
-          Even before that, I received my Bachelor&#39;s degree from <a href="">&Eacute;cole Polytechnique F&#233;d&#233;rale de Lausanne (EPFL)</a>, where I was lucky enough to do my bachelor's project at <a href="https://www.epfl.ch/labs/mlo/" target="_blank">MLO</a> and <a href="https://www.epfl.ch/labs/mlo/igh-intelligent-global-health/" target="_blank">iGH</a> under the supervision of Professors <a href="https://people.epfl.ch/martin.jaggi" target="_blank">Martin Jaggi</a> and <a href="https://medicine.yale.edu/profile/mary-anne-hartley/" target="_blank">Mary-Anne Hartley</a> . There I started an open source platform, <a href="https://github.com/epfml/disco" target="_blank">DisCO</a>, for training ML models in a federated and decentralized fashion. I showed its usefulness training Computer Vision models for Healthcare. 
+        <div id="bio-professional">
+          <p align='justify'>
+            I am a PhD student at Stanford University.
+            My dream is to design the next generation of learning-based assistive robots. I plan to get there by studying methods for in-context adaptation of policies to unseen scenarios while emphasizing human-centric approaches.
+            <br>
           </p>
 
           <p align='justify'>
-            In industry, I have interned at <a>Microsoft Bing</a> and <a>Amazon Search</a> working on their ranking algorithms.
+            Previously, I obtained my Master's degree at Harvard University supported by the <a href="https://rcc.harvard.edu" target="_blank">Real Colegio Complutense</a> scholarship. And I was part of the Improbable AI Lab at MIT CSAIL under the supervision of Professors <a href="https://people.eecs.berkeley.edu/~pulkitag/" target="_blank">Pulkit Agrawal</a> and <a href="https://homes.cs.washington.edu/~abhgupta/" target="_blank">Abhishek Gupta</a>.
+            Even before that, I received my Bachelor&#39;s degree from <a href="">&Eacute;cole Polytechnique F&#233;d&#233;rale de Lausanne (EPFL)</a>, where I was lucky enough to do my bachelor's project at <a href="https://www.epfl.ch/labs/mlo/" target="_blank">MLO</a> and <a href="https://www.epfl.ch/labs/mlo/igh-intelligent-global-health/" target="_blank">iGH</a> under the supervision of Professors <a href="https://people.epfl.ch/martin.jaggi" target="_blank">Martin Jaggi</a> and <a href="https://medicine.yale.edu/profile/mary-anne-hartley/" target="_blank">Mary-Anne Hartley</a>. There I started an open source platform, <a href="https://github.com/epfml/disco" target="_blank">DisCO</a>, for training ML models in a federated and decentralized fashion. I showed its usefulness training Computer Vision models for Healthcare.
           </p>
 
-        <p align='justify'>
-          I spend my free time I running, sailing, and biking; playing the barroque guitar; or reading books.
-        </p>
-        <br>
+          <p align='justify'>
+            In industry, I have interned at <a>Physical Intelligence</a> where I worked on adding memory to VLAs. Before that, I interned at <a>Microsoft Bing</a> and <a>Amazon Search</a> working on their ranking algorithms.
+          </p>
+
+          <p align='justify'>
+            I spend my free time running, sailing, and biking; playing the baroque guitar; or reading books.
+          </p>
+        </div>
+
+        <div id="bio-why" style="display:none">
+          <p align='justify'>
+            My dream is to give people the tools to dedicate their life to what they really want to do. If you had to dream big, what would you do?
+          </p>
+
+          <p align='justify'>
+            How do I plan to do this? I want to develop robots that expand human capabilities. Robots that will help us build new amazing physical things, from helping increase productivity in agriculture, construction and manufacturing, to exoskeletons that will help regain the mobility of those impaired, to a robot that will help you with your hobbies like building your next watch or windsurf board.
+          </p>
+
+          <p align='justify'>
+            Giving such robots to the world will expand human capabilities and resources to the point that I hope they will give economic independence to the general population and allow people to dedicate their life to whatever they want.
+          </p>
+
+          <p align='justify'>
+            I dedicate 99% of my professional energy on the above. But I acknowledge that getting to do what you really want can also be bottlenecked by lack of experience or guidance. Many people have guided and helped me get where I am, my dream school and dream lab to do the research I want to do. I try spending some time helping others who, like me, were uncertain how to reach their Moonshot goals, through <a href="https://start-project-moonshot.github.io/moonshot/" target="_blank">Project Moonshot</a>.
+          </p>
+        </div>
+
         <br>
         <br>
       </div>
     </div>
 
     <bottom-bar-component></bottom-bar-component>
+    <script>
+      function setBio(tab, clickedBtn) {
+        document.querySelectorAll('.bio-btn').forEach(function(btn) {
+          btn.classList.remove('active');
+        });
+        clickedBtn.classList.add('active');
+        document.getElementById('bio-professional').style.display = tab === 'professional' ? 'block' : 'none';
+        document.getElementById('bio-why').style.display = tab === 'why' ? 'block' : 'none';
+      }
+    </script>
   </body>
   
 </html>

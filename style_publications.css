@@ -61,10 +61,12 @@ video{
     max-width: 100%;
     max-height: 110px;
     display: block;
+    border-radius: 6px;
 }
 img{
     max-width: 100%;
     max-height: 110px;
+    border-radius: 6px;
 }
 @font-face {
     font-family: 'sourcecodefont';
