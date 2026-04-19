@@ -140,10 +140,22 @@
         </div>
 
         <div class="project pub-extra">
+          <img src="content/pi07_thumbnail.png" alt="Pi07 thumbnail">
+          <p>
+            <i>&#960;<sub>0.7</sub>: a Steerable Model with Emergent Capabilities</i><br>
+            Physical Intelligence (<strong>Marcel Torne</strong>), et al.
+            <br>
+            arXiv 2026
+            / <a href="https://www.pi.website/blog/pi07" target="_blank">Blog</a>
+            / <a href="https://www.pi.website/download/pi07.pdf" target="_blank">Paper</a>
+          </p>
+        </div>
+
+        <div class="project pub-extra">
           <img src="content/pi06_thumbnail.png" alt="Pi06 thumbnail">
           <p>
             <i>&#960;<sub>0.6</sub><sup>*</sup>: a VLA that Learns from Experience</i><br>
-            Ali Amin, Raichelle Aniceto, Ashwin Balakrishna, Kevin Black, ..., <strong>Marcel Torne</strong>, ..., et al.
+            Physical Intelligence (<strong>Marcel Torne</strong>), et al.
             <br>
             arXiv 2025
             / <a href="https://physicalintelligence.company/blog/pistar06" target="_blank">Blog</a>
@@ -321,6 +333,14 @@
         document.querySelectorAll('.pub-extra').forEach(function(el) {
           el.style.display = filter === 'all' ? 'grid' : 'none';
         });
+        if (filter === 'all') {
+          setTimeout(function() {
+            document.querySelectorAll('.pub-extra video').forEach(function(v) {
+              v.load();
+              v.play();
+            });
+          }, 50);
+        }
       }
     </script>
   </body>
