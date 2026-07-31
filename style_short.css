@@ -13,6 +13,7 @@ body{
     background-color: #e5e8eb;
     background-position: left 650px top 140px;
     background-size: 700px;
+    background-attachment: fixed;
     height: 100%;
 }
 
